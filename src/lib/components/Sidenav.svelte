@@ -7,7 +7,8 @@
 		{ text: 'Reactivity', href: '/reactivity' },
 		{ text: 'Component Props', href: '/props' },
 		{ text: 'Template Helpers', href: '/template-helpers' },
-		{ text: 'Using Components', href: '/component-imports' }
+		{ text: 'Using Components', href: '/component-imports' },
+		{ text: 'Routing', href: '/routing' }
 	];
 </script>
 
