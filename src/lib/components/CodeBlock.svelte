@@ -51,3 +51,10 @@
 	{/if}
 	<pre><code class="language-{language} hljs">{@html highlightedCode}</code></pre>
 </div>
+
+<style>
+	:global(pre code) {
+		-moz-tab-size: 2; /* Older Firefox support */
+		tab-size: 2; /* Standard syntax */
+	}
+</style>
