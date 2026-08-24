@@ -6,7 +6,8 @@
 	const links = [
 		{ text: 'Reactivity', href: '/reactivity' },
 		{ text: 'Component Props', href: '/props' },
-		{ text: 'Template Helpers', href: '/template-helpers' }
+		{ text: 'Template Helpers', href: '/template-helpers' },
+		{ text: 'Using Components', href: '/component-imports' }
 	];
 </script>
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	let fruits = $state(['apple', 'banana', 'cherry']);
 	let isLoggedIn = $state(true);
 	let score = $state(72);

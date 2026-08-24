@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	// Any regular function can be imported and called directly in the template.
 	import { uppercase } from './utils.js';
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	let user = $state({ name: 'Alice', age: 30 });
 	let fruits = $state(['apple', 'banana']);
 
