@@ -3,7 +3,10 @@
 	import { page } from '$app/state';
 	import { ChevronRight } from '@lucide/svelte';
 
-	const links = [{ text: 'Reactivity', href: '/reactivity' }];
+	const links = [
+		{ text: 'Reactivity', href: '/reactivity' },
+		{ text: 'Component Props', href: '/props' }
+	];
 </script>
 
 <nav class="min-h-screen bg-indigo-950 p-4">
