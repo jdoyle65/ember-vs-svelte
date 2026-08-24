@@ -1,0 +1,18 @@
+{{! Conditional rendering }}
+{{#if this.isLoggedIn}}
+  <p>Welcome back!</p>
+{{else}}
+  <p>Please log in.</p>
+{{/if}}
+
+{{! Iterating a list }}
+<ul>
+  {{#each this.fruits as |fruit i|}}
+    <li>{{add i 1}}. {{fruit}}</li>
+  {{/each}}
+</ul>
+
+{{! Derived values must come from the class — no arbitrary JS in templates }}
+<p>Fruits: {{this.fruitList}}</p>
+<p>Upper: {{this.firstFruitUpper}}</p>
+<p>Grade: {{this.grade}}</p>
