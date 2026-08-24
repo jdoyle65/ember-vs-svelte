@@ -10,11 +10,12 @@
 	import 'highlight.js/styles/github-dark.css';
 
 	interface Props {
-		language: 'svelte' | 'glimmer' | 'handlebars' | 'javascript' | 'typescript' | 'css' | 'xml';
+		language: 'svelte' | 'glimmer' | 'hbs' | 'javascript' | 'typescript' | 'css' | 'xml';
 		code: string;
+		filename?: string;
 	}
 
-	let { language, code = '' }: Props = $props();
+	let { language, code = '', filename }: Props = $props();
 
 	if (!hljs.getLanguage('javascript')) {
 		hljs.registerLanguage('javascript', javascript);
@@ -44,4 +45,9 @@
 	});
 </script>
 
-<pre><code class="language-{language} hljs">{@html highlightedCode}</code></pre>
+<div>
+	{#if filename}
+		<div class="py-1 text-sm italic">{filename}</div>
+	{/if}
+	<pre><code class="language-{language} hljs">{@html highlightedCode}</code></pre>
+</div>
