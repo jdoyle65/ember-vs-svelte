@@ -3,6 +3,9 @@
 	import svelteExample from '$lib/components/examples/reactivity.svelte?raw';
 	import emberJsExample from '$lib/components/examples/reactivity.js?raw';
 	import emberHbsExample from '$lib/components/examples/reactivity.hbs?raw';
+	import deepSvelteExample from '$lib/components/examples/deep-reactivity.svelte?raw';
+	import deepEmberJsExample from '$lib/components/examples/deep-reactivity.js?raw';
+	import deepEmberHbsExample from '$lib/components/examples/deep-reactivity.hbs?raw';
 	import SvelteLogo from '$lib/components/SvelteLogo.svelte';
 	import EmberLogo from '$lib/components/EmberLogo.svelte';
 </script>
@@ -41,5 +44,32 @@
 		<EmberLogo />
 		<CodeBlock code={emberJsExample} language="javascript" filename="reactivity.js" />
 		<CodeBlock code={emberHbsExample} language="hbs" filename="reactivity.hbs" />
+	</div>
+</div>
+
+<h2 class="mt-16 mb-6 text-4xl font-bold">Deep Reactivity</h2>
+<div class="prose mb-12">
+	<p>
+		In Svelte, <code>$state</code> creates <strong>deeply reactive</strong> objects and arrays. You can
+		mutate nested properties or call array mutation methods like <code>push</code> and index assignment
+		directly — Svelte tracks changes at every level and re-renders automatically.
+	</p>
+	<p>
+		Ember's <code>@tracked</code> decorator only watches the <strong>reference</strong> of the decorated
+		property, not its contents. Mutating a nested property or calling <code>push</code> on a tracked
+		array won't trigger a re-render because the reference hasn't changed. To update the UI you must
+		replace the object or array entirely — a common pattern is using the spread operator
+		(<code>{'{ ...obj }'}</code>) or <code>Array.prototype.map</code> to produce a new value.
+	</p>
+</div>
+<div class="flex flex-row gap-12">
+	<div class="flex flex-col gap-4">
+		<SvelteLogo />
+		<CodeBlock code={deepSvelteExample} language="svelte" filename="deep-reactivity.svelte" />
+	</div>
+	<div class="flex flex-col gap-4">
+		<EmberLogo />
+		<CodeBlock code={deepEmberJsExample} language="javascript" filename="deep-reactivity.js" />
+		<CodeBlock code={deepEmberHbsExample} language="hbs" filename="deep-reactivity.hbs" />
 	</div>
 </div>
