@@ -8,10 +8,9 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-
 <main class="flex flex-row">
 	<Sidenav />
-	<div class="p-4">
+	<div class="max-h-screen flex-1 overflow-y-auto p-4">
 		{@render children()}
 	</div>
 </main>
