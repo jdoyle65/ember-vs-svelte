@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Button from '$lib/components/ui/button/button.svelte';
 	import { page } from '$app/state';
 	import { base } from '$app/paths';
 	import { ChevronRight } from '@lucide/svelte';
@@ -18,16 +17,33 @@
 	];
 </script>
 
-<nav class="min-h-screen bg-indigo-950 p-4">
-	<ul>
+<nav class="flex h-screen w-60 shrink-0 flex-col bg-indigo-950 px-3 py-6">
+	<div class="mb-8 px-3">
+		<p class="text-xs font-semibold tracking-widest text-indigo-400 uppercase">Framework Guide</p>
+		<a
+			href={base + '/'}
+			class="mt-1 block text-lg font-bold text-white transition-colors hover:text-indigo-200"
+		>
+			Ember vs Svelte
+		</a>
+	</div>
+	<ul class="flex flex-col gap-0.5">
 		{#each links as link (link.path)}
-			<li class="flex items-center">
-				{#if page.url.pathname === base + link.path}
-					<ChevronRight class="size-4 shrink-0 text-indigo-300" />
-				{:else}
-					<span class="size-4 shrink-0"></span>
-				{/if}
-				<Button href={base + link.path} variant="link" class="text-slate-100">{link.text}</Button>
+			{@const isActive = page.url.pathname === base + link.path}
+			<li>
+				<a
+					href={base + link.path}
+					class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors {isActive
+						? 'bg-indigo-800/70 font-medium text-white'
+						: 'text-indigo-200 hover:bg-indigo-900/60 hover:text-white'}"
+				>
+					<ChevronRight
+						class="size-3.5 shrink-0 text-indigo-300 transition-opacity {isActive
+							? 'opacity-100'
+							: 'opacity-0'}"
+					/>
+					{link.text}
+				</a>
 			</li>
 		{/each}
 	</ul>
