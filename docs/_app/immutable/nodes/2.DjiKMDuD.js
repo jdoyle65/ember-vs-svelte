@@ -1,0 +1,2 @@
+import{C as e,W as t,x as n}from"../chunks/DIwIDFPt.js";import"../chunks/xihTtKlq.js";var r=e(`<h1 class="text-6xl font-bold">Ember vs Svelte</h1> <div class="prose"><p>This is a simple site that compare & contrast the Ember and Svelte frameworks. Start by clicking
+		a topic in the sidebar.</p></div>`,1);function i(e){var i=r();t(2),n(e,i)}export{i as component};
