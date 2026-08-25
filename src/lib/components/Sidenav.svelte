@@ -9,7 +9,12 @@
 		{ text: 'Component Props', path: '/props' },
 		{ text: 'Template Helpers', path: '/template-helpers' },
 		{ text: 'Using Components', path: '/component-imports' },
-		{ text: 'Routing', path: '/routing' }
+		{ text: 'Routing', path: '/routing' },
+		{ text: 'Data Fetching', path: '/data-fetching' },
+		{ text: 'Services & Shared State', path: '/services' },
+		{ text: 'Lifecycle Hooks', path: '/lifecycle' },
+		{ text: 'CSS Scoping', path: '/css-scoping' },
+		{ text: 'Two-way Binding & Forms', path: '/forms' }
 	];
 </script>
 

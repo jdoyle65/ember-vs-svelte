@@ -1,0 +1,13 @@
+<form {{on 'submit' this.submit}}>
+	<Input @value={{this.name}} placeholder='Your name' />
+
+	<Input @type='checkbox' @checked={{this.isAgreed}} {{on 'change' this.setIsAgreed}} />
+
+	<select {{on 'change' this.setRole}}>
+		<option value='viewer'>Viewer</option>
+		<option value='editor'>Editor</option>
+		<option value='admin'>Admin</option>
+	</select>
+
+	<button type='submit'>Submit</button>
+</form>

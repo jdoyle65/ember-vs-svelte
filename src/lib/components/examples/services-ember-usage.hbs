@@ -1,0 +1,8 @@
+<nav>
+  {{#if this.session.currentUser}}
+    <span>Welcome, {{this.session.currentUser.name}}</span>
+    <button {{on "click" this.session.logout}}>Log out</button>
+  {{else}}
+    <button {{on "click" this.login}}>Log in</button>
+  {{/if}}
+</nav>

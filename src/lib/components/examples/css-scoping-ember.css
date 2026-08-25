@@ -1,0 +1,42 @@
+/* Global CSS in an Ember app — nothing prevents these styles from
+   affecting every .card element in the entire application.
+   All stylesheets are global by default. */
+
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #64748b;
+}
+
+/* Common workaround: BEM naming convention to avoid collisions.
+   Instead of .card, scope it to the component with a prefix. */
+
+.my-component__card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.my-component__card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.my-component__card-body {
+  color: #64748b;
+}
