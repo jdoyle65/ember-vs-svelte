@@ -1,4 +1,4 @@
-import{C as e,F as t,G as n,N as r,P as i,W as a,x as o}from"../chunks/DIwIDFPt.js";import"../chunks/xihTtKlq.js";import{n as s,r as c,t as l}from"../chunks/Du5nJqbu.js";var u=`<script lang="ts">
+import{M as e,N as t,P as n,S as r,U as i,W as a,b as o}from"../chunks/BBgs22xH.js";import"../chunks/xihTtKlq.js";import{n as s,r as c,t as l}from"../chunks/Bm3-0dFn.js";var u=`<script lang="ts">
 	let count = $state(1);
 	let doubledCount = $derived(count * 2);
 
@@ -86,7 +86,7 @@ export default class extends Component {
 <button {{on 'click' this.birthday}}>Birthday</button>
 <button {{on 'click' this.addFruit}}>Add Fruit</button>
 <button {{on 'click' this.renameFruit}}>Rename First Fruit</button>
-`,g=e(`<h1 class="mt-4 mb-16 text-6xl font-bold">Reactivity</h1> <div class="prose mb-12"><p>Ember relies on the <code>@tracked</code> decorator for reactivity. Anytime the value of the
+`,g=r(`<h1 class="mt-4 mb-16 text-6xl font-bold">Reactivity</h1> <div class="prose mb-12"><p>Ember relies on the <code>@tracked</code> decorator for reactivity. Anytime the value of the
 		tracked <code>count</code> value gets updated in the code below, Ember will ensure the template
 		is re-rendered. For derived values, Ember uses <code>get</code> functions. Whenever a getter contains
 		a tracked value, it will be re-evaluated when the tracked value changes.</p> <p>Svelte approaches reactivity using something called "runes". In the example below we declare the <code>$state</code> rune to create a reactive variable. For derived values, we use the <code>$derived</code> rune. Whenever
@@ -97,4 +97,4 @@ export default class extends Component {
 		property, not its contents. Mutating a nested property or calling <code>push</code> on a tracked
 		array won't trigger a re-render because the reference hasn't changed. To update the UI you must
 		replace the object or array entirely — a common pattern is using the spread operator
-		(<code></code>) or <code>Array.prototype.map</code> to produce a new value.</p></div> <div class="flex flex-row gap-12"><div class="flex flex-col gap-4"><!> <!></div> <div class="flex flex-col gap-4"><!> <!> <!></div></div>`,1);function _(e){var _=g(),v=t(i(_),2),y=t(r(v),4),b=t(r(y));b.textContent=`{{ on }}`,a(7),n(y),n(v);var x=t(v,2),S=r(x),C=r(S);s(C,{});var w=t(C,2);c(w,{get code(){return u},language:`svelte`,filename:`reactivity.svelte`}),n(S);var T=t(S,2),E=r(T);l(E,{});var D=t(E,2);c(D,{get code(){return d},language:`javascript`,filename:`reactivity.js`});var O=t(D,2);c(O,{get code(){return f},language:`hbs`,filename:`reactivity.hbs`}),n(T),n(x);var k=t(x,4),A=t(r(k),2),j=t(r(A),7);j.textContent=`{ ...obj }`,a(3),n(A),n(k);var M=t(k,2),N=r(M),P=r(N);s(P,{});var F=t(P,2);c(F,{get code(){return p},language:`svelte`,filename:`deep-reactivity.svelte`}),n(N);var I=t(N,2),L=r(I);l(L,{});var R=t(L,2);c(R,{get code(){return m},language:`javascript`,filename:`deep-reactivity.js`});var z=t(R,2);c(z,{get code(){return h},language:`hbs`,filename:`deep-reactivity.hbs`}),n(I),n(M),o(e,_)}export{_ as component};
+		(<code></code>) or <code>Array.prototype.map</code> to produce a new value.</p></div> <div class="flex flex-row gap-12"><div class="flex flex-col gap-4"><!> <!></div> <div class="flex flex-col gap-4"><!> <!> <!></div></div>`,1);function _(r){var _=g(),v=n(t(_),2),y=n(e(v),4),b=n(e(y));b.textContent=`{{ on }}`,i(7),a(y),a(v);var x=n(v,2),S=e(x),C=e(S);s(C,{});var w=n(C,2);c(w,{get code(){return u},language:`svelte`,filename:`reactivity.svelte`}),a(S);var T=n(S,2),E=e(T);l(E,{});var D=n(E,2);c(D,{get code(){return d},language:`javascript`,filename:`reactivity.js`});var O=n(D,2);c(O,{get code(){return f},language:`hbs`,filename:`reactivity.hbs`}),a(T),a(x);var k=n(x,4),A=n(e(k),2),j=n(e(A),7);j.textContent=`{ ...obj }`,i(3),a(A),a(k);var M=n(k,2),N=e(M),P=e(N);s(P,{});var F=n(P,2);c(F,{get code(){return p},language:`svelte`,filename:`deep-reactivity.svelte`}),a(N);var I=n(N,2),L=e(I);l(L,{});var R=n(L,2);c(R,{get code(){return m},language:`javascript`,filename:`deep-reactivity.js`});var z=n(R,2);c(z,{get code(){return h},language:`hbs`,filename:`deep-reactivity.hbs`}),a(I),a(M),o(r,_)}export{_ as component};

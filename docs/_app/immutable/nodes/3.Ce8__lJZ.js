@@ -1,4 +1,4 @@
-import{C as e,F as t,G as n,N as r,P as i,x as a}from"../chunks/DIwIDFPt.js";import"../chunks/xihTtKlq.js";import{n as o,r as s,t as c}from"../chunks/Du5nJqbu.js";var l=`<script lang="ts">
+import{M as e,N as t,P as n,S as r,W as i,b as a}from"../chunks/BBgs22xH.js";import"../chunks/xihTtKlq.js";import{n as o,r as s,t as c}from"../chunks/Bm3-0dFn.js";var l=`<script lang="ts">
 	// Components must be explicitly imported before they can be used.
 	// The local name is entirely up to you.
 	import Button from '$lib/components/Button.svelte';
@@ -33,7 +33,7 @@ import{C as e,F as t,G as n,N as r,P as i,x as a}from"../chunks/DIwIDFPt.js";imp
 
 {{! Which Button is this? Yours, or the addon's? }}
 <Button>Click me</Button>
-`,p=e(`<h1 class="mt-4 mb-16 text-6xl font-bold">Using Components</h1> <div class="prose mb-12"><p>Ember uses a <strong>global component registry</strong> built automatically from your
+`,p=r(`<h1 class="mt-4 mb-16 text-6xl font-bold">Using Components</h1> <div class="prose mb-12"><p>Ember uses a <strong>global component registry</strong> built automatically from your
 		application's directory structure. Any file placed under <code>app/components/</code> is
 		registered by name and can be used in any template without any import. A file at <code>app/components/button.hbs</code> becomes <code>&lt;Button /&gt;</code> everywhere in the app.</p> <p>Svelte takes the opposite approach: components are plain ES modules. To use a component you must <strong>explicitly import it</strong> in the <code>&lt;script&gt;</code> block of the file that needs
 		it. The name you give the import is the name used in the template, and it is entirely local to that
@@ -41,4 +41,4 @@ import{C as e,F as t,G as n,N as r,P as i,x as a}from"../chunks/DIwIDFPt.js";imp
 		a component under the same name as one of yours — say, both define a <code>Button</code> — Ember must
 		pick one. Resolution order determines the winner, silently, with no warning at build time or runtime.</p> <p>In Svelte this problem cannot occur. There is no registry. Every component reference is a local
 		import binding — if two packages export a <code>Button</code>, you simply import them under
-		different names. The compiler sees local identifiers, not global strings.</p></div> <div class="flex flex-row gap-12"><div class="flex flex-col gap-4"><!> <!></div> <div class="flex flex-col gap-4"><!> <!></div></div>`,1);function m(e){var m=p(),h=t(i(m),4),g=r(h),_=r(g);o(_,{});var v=t(_,2);s(v,{get code(){return l},language:`svelte`,filename:`page.svelte`}),n(g);var y=t(g,2),b=r(y);c(b,{});var x=t(b,2);s(x,{get code(){return u},language:`hbs`,filename:`page.hbs`}),n(y),n(h);var S=t(h,6),C=r(S),w=r(C);o(w,{});var T=t(w,2);s(T,{get code(){return d},language:`svelte`,filename:`page.svelte`}),n(C);var E=t(C,2),D=r(E);c(D,{});var O=t(D,2);s(O,{get code(){return f},language:`hbs`,filename:`page.hbs`}),n(E),n(S),a(e,m)}export{m as component};
+		different names. The compiler sees local identifiers, not global strings.</p></div> <div class="flex flex-row gap-12"><div class="flex flex-col gap-4"><!> <!></div> <div class="flex flex-col gap-4"><!> <!></div></div>`,1);function m(r){var m=p(),h=n(t(m),4),g=e(h),_=e(g);o(_,{});var v=n(_,2);s(v,{get code(){return l},language:`svelte`,filename:`page.svelte`}),i(g);var y=n(g,2),b=e(y);c(b,{});var x=n(b,2);s(x,{get code(){return u},language:`hbs`,filename:`page.hbs`}),i(y),i(h);var S=n(h,6),C=e(S),w=e(C);o(w,{});var T=n(w,2);s(T,{get code(){return d},language:`svelte`,filename:`page.svelte`}),i(C);var E=n(C,2),D=e(E);c(D,{});var O=n(D,2);s(O,{get code(){return f},language:`hbs`,filename:`page.hbs`}),i(E),i(S),a(r,m)}export{m as component};
